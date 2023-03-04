@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/Style3.css">
+    <title>Новости</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="overlay-content">
+            <a href="index.html#">Квест</a>
+            <a href="HTMLPage1.html#">Полезная инфоримация
+            <a href="HTMLPage3.html#">Разработчики</a>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+    </div>
+    <span style="font-size:30px;cursor:pointer" ; align="" onclick="openNav()">☰ open</span>
+</body>
+</html>

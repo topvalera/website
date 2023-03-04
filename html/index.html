@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>что то</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="overlay-content">
+            <a href="index.html#">Квест</a>
+            <a href="HTMLPage1.html#">
+                Полезная инфоримация
+                <a href="HTMLPage3.html#">Разработчики</a>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+    </div>
+    <div class="header">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ open</span>
+        <h1> Кибергигиена</h1>
+    </div>
+    <div class="dialog">
+        <dialog open="open" id="closeMe">
+            <button type="button" onclick="window.closeMe.close();">
+            </button>
+        </dialog>
+
+    </div>
+    <div class="card">
+        <img src="images/Без имfdgdfgdни.png" alt="John" style="width:100%" onclick="document.querySelector('#dialog').classList.toggle('open')">
+        <h1>HTML CSS</h1>
+    </div>
+</body>
+</html>
+
